@@ -20,7 +20,7 @@ function App() {
 
 
   const getdata = async () =>{
-  const response = await axios.get("http://localhost:5000/user/getall");
+  const response = await axios.get("https://crudmernwebapp.onrender.com/user/getall");
   console.log(response.data.users);
   setUsers(response.data.users);
 }

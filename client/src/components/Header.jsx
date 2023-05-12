@@ -10,7 +10,7 @@ export default function Header() {
         <Container>
           <Navbar.Brand href="/">
             <Image
-             roundeCircle
+             roundedCircle
               alt=""
               src={img}
               width="70"

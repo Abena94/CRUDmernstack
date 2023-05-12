@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const updateUser = (id,data) =>{
     axios
-    .patch(`http://localhost:5000/user/updateuser/${id}`,data)
+    .patch(`https://crudmernwebapp.onrender.com/user/updateuser/${id}`,data)
     .then(function (response) {
       console.log(response.status, response.data);
       
@@ -13,7 +13,7 @@ export const updateUser = (id,data) =>{
   }
 
   export const createUser = (data) =>{
-    axios.post('http://localhost:5000/user/createUser',data)
+    axios.post('https://crudmernwebapp.onrender.com/user/createUser',data)
       .then(function (response) {
         console.log(response.status, response.data);
         
@@ -25,7 +25,7 @@ export const updateUser = (id,data) =>{
   
   export const deleteUser = (id) =>{
     axios
-    .delete(`http://localhost:5000/user/deleteuser/${id}`)
+    .delete(`https://crudmernwebapp.onrender.com/user/deleteuser/${id}`)
     .then(function (response) {
       console.log(response.status, response.data);
       
